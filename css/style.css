@@ -2,19 +2,28 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: #757575;
 }
+:root {
+  --brand-logo-color: #2196f3;
+  --brand-background-darkcolor: #2f303a;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header-border {
+  border-bottom: 1px solid #ececec;
 }
 .header-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 24px 0px 25px 0px;
-  border-bottom: 1px solid #ececec;
 }
 .logo {
-  color: rgba(33, 150, 243, 1);
+  color: var(--brand-logo-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -52,7 +61,7 @@ body {
 }
 .menu-nav li a:hover,
 .menu-nav li a:focus {
-  color: #2196f3;
+  color: var(--brand-logo-color);
 }
 
 .contacts li a {
@@ -65,7 +74,7 @@ body {
 }
 .contacts li a:hover,
 .contacts li a:focus {
-  color: #2196f3;
+  color: var(--brand-logo-color);
 }
 .contacts {
   list-style: none;
@@ -76,7 +85,7 @@ body {
   margin: 0px;
 }
 .footer-container {
-  background-color: #2f303a;
+  background-color: var(--brand-background-darkcolor);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -93,7 +102,7 @@ body {
 }
 .contacts-footer li a:hover,
 .contacts-footer li a:focus {
-  color: #2196f3;
+  color: var(--brand-logo-color);
 }
 .contacts-footer {
   list-style: none;
@@ -112,7 +121,7 @@ body {
   padding-bottom: 9px;
 }
 .offer-main {
-  background-color: #2f303a;
+  background-color: var(--brand-background-darkcolor);
   display: block;
   padding: 200px 0px 200px 0px;
 }
@@ -133,7 +142,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--brand-logo-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
@@ -165,7 +174,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 0;
+  padding: 94px 0px 0px 0px;
   margin: 0px;
   justify-content: space-between;
   align-items: center;
@@ -223,6 +232,7 @@ body {
   border-radius: 0px 0px 4px 4px;
   padding: 0;
   margin: 0;
+  display: block;
 }
 .team-mainpage-list figcaption {
   text-align: center;
@@ -231,6 +241,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   padding: 30px 0px 30px 0px;
+  display: block;
 }
 .team-mainpage-name {
   font-weight: 500;
@@ -238,7 +249,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-bottom: 10px;
 }
 
 .portfolio-buttons-list button {
@@ -267,7 +277,7 @@ body {
 .portfolio-buttons-list button:active,
 .portfolio-buttons-list button:hover,
 .portfolio-buttons-list button:focus {
-  background: #2196f3;
+  background: var(--brand-logo-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: #ffffff;
@@ -296,8 +306,9 @@ body {
   letter-spacing: 0.03em;
   text-align: left;
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
-  border-top: 0;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   margin-top: -4px; /* margin-top used for borders without gaps on top */
 }
 .container-projects span {
