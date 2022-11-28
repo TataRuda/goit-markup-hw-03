@@ -317,5 +317,8 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
-  padding-bottom: 4px;
+}
+.container-projects p {
+  margin: 0;
+  padding-top: 3px;
 }
